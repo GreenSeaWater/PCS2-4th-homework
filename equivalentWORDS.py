@@ -55,6 +55,6 @@ def get_path(graph, startWord, endWord):
 
 transformations = [('head', 'tail'), ('fast', 'slow'), ('fool', 'sage'), ('cold', 'warm'), ('new', 'old')]
 for (start, end) in transformations:
-    print('The shortest path from ' + start + ' and ' + end + ' is:')
+    print('The shortest path from ' + start + ' to ' + end + ' is:')
     path = get_path(myGraph, start, end)
     print(' -> '.join(path))
